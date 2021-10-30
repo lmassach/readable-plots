@@ -1,0 +1,14 @@
+# IDEs
+.vscode/
+*~
+
+# Output files of tests
+*.pdf
+*.root
+
+# Python
+.py[cod]
+__pycache__/
+
+# ROOT/C++
+# TODO
