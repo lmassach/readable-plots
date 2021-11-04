@@ -5,6 +5,7 @@ from matplotlib.backends.backend_pdf import PdfPages
 from readable_plots import *
 
 if __name__ == "__main__":
+    plt.rc("figure", max_open_warning=0)
     with PdfPages('test_results.pdf') as pdf:
         for font_sz in [10, 15, 22]:
             print(f"Testing font_size={font_sz}")
@@ -51,7 +52,7 @@ if __name__ == "__main__":
                 # Subplots (wide)
                 # 2 subplots
                 x = np.linspace(0, 10, 100)
-                y1 = 0.5 + 0.5 * np.sin(x)
+                y1 = 0.5 * np.sin(x)
                 y2 = y1 + np.random.normal(0, 0.25, x.shape)
                 set_style(font_size=font_sz, n_rows=2*spc)
                 fig = plt.figure()

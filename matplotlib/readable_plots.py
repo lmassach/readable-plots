@@ -34,7 +34,7 @@ def set_style(font_size=22, n_rows=1, n_cols=1, auto_layout=False):
     else:
         mpl.rc("figure", figsize=(6.4, 4.8), dpi=100, autolayout=False)
         # Empirically-tested margins
-        left = 0.06 + 0.06 * font_size / 10
+        left = 0.06 + 0.07 * font_size / 10
         left = _crop(left, 0.3, "left margin")
         right = -0.05 + 0.1 * font_size / 10
         right = _crop(right, 0.3, "right margin")
